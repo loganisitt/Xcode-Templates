@@ -1,4 +1,4 @@
-import RouterServiceInterface
+import RouterInterface
 import ___VARIABLE_productName___Interface
 import UIKit
 

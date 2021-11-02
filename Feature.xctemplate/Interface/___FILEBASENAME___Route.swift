@@ -1,4 +1,4 @@
-import RouterServiceInterface
+import RouterInterface
 
 public struct ___VARIABLE_productName___Route: Route {
     public static var identifier: String = "<#identifier#>"

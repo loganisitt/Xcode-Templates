@@ -25,7 +25,7 @@ class ___VARIABLE_productName___ViewConnectable: Connectable {
     }
 
     private func accept(model: ___VARIABLE_productName___Model) {
-        
+
     }
 
     private func dispose() {

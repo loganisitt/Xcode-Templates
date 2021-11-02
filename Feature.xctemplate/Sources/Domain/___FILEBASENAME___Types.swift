@@ -11,3 +11,7 @@ enum ___VARIABLE_productName___Event {
 enum ___VARIABLE_productName___Effect: Equatable {
 
 }
+
+enum ___VARIABLE_productName___Destination {
+    case example
+}

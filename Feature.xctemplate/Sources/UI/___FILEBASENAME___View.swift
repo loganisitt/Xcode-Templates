@@ -12,11 +12,11 @@ final class ___VARIABLE_productName___View: BasicView {
     }
 
     override func customizeAppearance() {
-        
+
     }
 
     override func activateConstraints() {
-        
+
     }
 }
 

@@ -1,33 +1,23 @@
 import Assertions
 import MobiusCore
-import RouterServiceInterface
+import RouterInterface
 import UIKit
-
-enum Navigation {
-    case example
-}
 
 class NavigationEffectHandler: EffectHandler {
     typealias Callback = EffectCallback<___VARIABLE_productName___Event>
 
-    weak var presentingViewController: UIViewController?
-    let routerService: RouterServiceProtocol
+    let routerService: RouterService
 
     // MARK: - Initialization
 
-    init(presentingViewController: UIViewController, routerService: RouterServiceProtocol) {
-        self.presentingViewController = presentingViewController
+    init(routerService: RouterService) {
         self.routerService = routerService
     }
 
     // MARK: - Effect Handler
 
-    func handle(_ navigation: Navigation, _ callback: Callback) -> Disposable {
-        guard let presentingViewController = presentingViewController else {
-            crash(message: "presentingViewController is nil")
-        }
-
-        // switch navigation {
+    func handle(_ destination: ___VARIABLE_productName___Destination, _ callback: Callback) -> Disposable {
+        // switch destination {
         // case .example:
         //     routerService
         //         .navigate(
@@ -37,9 +27,13 @@ class NavigationEffectHandler: EffectHandler {
         //             animated: true
         //         )
         // }
+        return self
+    }
+}
 
-        return AnonymousDisposable {
+extension NavigationEffectHandler: Disposable {
 
-        }
+    func dispose() {
+        // no-op
     }
 }
