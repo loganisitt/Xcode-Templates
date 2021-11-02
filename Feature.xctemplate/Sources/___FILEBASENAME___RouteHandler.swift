@@ -11,8 +11,7 @@ public class ___VARIABLE_productName___RouteHandler: RouteHandler {
     public init() { }
 
     public func destination(
-        forRoute route: Route,
-        fromViewController viewController: UIViewController
+        forRoute route: Route
     ) -> Feature.Type {
         guard route is ___VARIABLE_productName___Route else {
             preconditionFailure("unexpected route")
