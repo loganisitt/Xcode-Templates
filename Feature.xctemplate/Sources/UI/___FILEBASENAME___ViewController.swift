@@ -29,6 +29,8 @@ final class ___VARIABLE_productName___ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        _view.apply(theme: theme)
+
         // Pass in _view 
         viewConnectable = ___VARIABLE_productName___ViewConnectable()
     }

@@ -19,3 +19,10 @@ final class ___VARIABLE_productName___View: BasicView {
         
     }
 }
+
+extension ___VARIABLE_productName___View: Themeable {
+
+    func apply(theme: ___VARIABLE_productName___Theme) {
+        backgroundColor = theme.backgroundColor
+    }
+}

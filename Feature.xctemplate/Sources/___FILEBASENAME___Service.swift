@@ -2,9 +2,11 @@ import RouterServiceInterface
 import ___VARIABLE_productName___Interface
 import UIKit
 
-struct ___VARIABLE_productName___Service: Feature {
+public struct ___VARIABLE_productName___Service: Feature {
 
-    func build(fromRoute route: Route?) -> UIViewController {
+    public init() { }
+
+    public func build(fromRoute route: Route?) -> UIViewController {
         guard let route = route as? ___VARIABLE_productName___Route else {
             fatalError()
         }

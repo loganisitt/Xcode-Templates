@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-XCODE_DIR='~/Library/Developer/Xcode/Templates/File Templates/Feature'
+XCODE_DIR="~/Library/Developer/Xcode/Templates/File\ Templates/Feature"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ARGUMENTS=$@
 
@@ -19,7 +19,7 @@ removeTemplates() {
 copyTemplates() {
     mkdir -p "$XCODE_DIR"
 
-    cp -a $SCRIPT_DIR/*.xctemplate "$XCODE_DIR"
+    cp -a ./*.xctemplate "$XCODE_DIR"
 }
 
 printHelp() {
