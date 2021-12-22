@@ -1,16 +1,16 @@
 import Assertions
 import MobiusCore
-import RouterInterface
+import RouterServiceInterface
 import UIKit
 
 class NavigationEffectHandler: EffectHandler {
     typealias Callback = EffectCallback<___VARIABLE_productName___Event>
 
-    let routerService: RouterService
+    let routerService: RouterServiceProtocol
 
     // MARK: - Initialization
 
-    init(routerService: RouterService) {
+    init(routerService: RouterServiceProtocol) {
         self.routerService = routerService
     }
 

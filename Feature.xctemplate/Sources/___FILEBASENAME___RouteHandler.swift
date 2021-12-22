@@ -1,4 +1,4 @@
-import RouterInterface
+import RouterServiceInterface
 import ___VARIABLE_productName___Interface
 import UIKit
 
@@ -11,7 +11,8 @@ public class ___VARIABLE_productName___RouteHandler: RouteHandler {
     public init() { }
 
     public func destination(
-        forRoute route: Route
+        forRoute route: Route,
+        fromViewController viewController: UIViewController
     ) -> Feature.Type {
         guard route is ___VARIABLE_productName___Route else {
             preconditionFailure("unexpected route")
